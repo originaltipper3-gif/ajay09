@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Toss King Ajay | Official Telegram Channel</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800;900&family=Rajdhani:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #050811;
+      color: #ffffff;
+      overflow-x: hidden;
+      touch-action: manipulation;
+    }
+    .font-sport {
+      font-family: 'Rajdhani', sans-serif;
+    }
+
+    /* Neon Glow Effects */
+    .glow-gold {
+      box-shadow: 0 0 25px rgba(245, 158, 11, 0.45);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 25px rgba(6, 182, 212, 0.45);
+    }
+    .glow-green {
+      box-shadow: 0 0 25px rgba(16, 185, 129, 0.5);
+    }
+
+    /* Pulse Animations */
+    @keyframes pulse-ring {
+      0% { transform: scale(0.96); opacity: 0.8; }
+      50% { transform: scale(1.03); opacity: 1; }
+      100% { transform: scale(0.96); opacity: 0.8; }
+    }
+    .pulse-btn {
+      animation: pulse-ring 1.8s infinite ease-in-out;
+    }
+
+    /* Shimmer Effect on CTA */
+    @keyframes shimmer {
+      0% { transform: translateX(-150%); }
+      100% { transform: translateX(150%); }
+    }
+    .animate-shimmer {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+      animation: shimmer 2.2s infinite ease-in-out;
+    }
+
+    /* Glassmorphism card */
+    .glass-card {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* Circle Timer Animation */
+    .countdown-svg circle {
+      transition: stroke-dashoffset 1s linear;
+    }
+  </style>
+</head>
+<body class="relative min-h-screen flex flex-col justify-between items-center px-4 py-6 selection:bg-cyan-500 selection:text-white">
+
+  <!-- Ambient Background Lighting Glows -->
+  <div class="fixed top-[-10%] left-[-15%] w-72 h-72 md:w-96 md:h-96 bg-amber-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+  <div class="fixed bottom-[-10%] right-[-15%] w-72 h-72 md:w-96 md:h-96 bg-cyan-500/20 rounded-full blur-[100px] pointer-events-none"></div>
+
+  <!-- Header Alert / Live Status -->
+  <header class="w-full max-w-md flex items-center justify-between py-2 px-4 rounded-full glass-card border border-emerald-500/30 mb-5">
+    <div class="flex items-center gap-2">
+      <span class="relative flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+      </span>
+      <span class="text-xs uppercase tracking-wider font-bold text-emerald-400">Live Reports Active</span>
+    </div>
+    <div class="text-xs text-slate-300 font-semibold flex items-center gap-1">
+      <i class="fa-solid fa-users text-cyan-400 text-[11px]"></i>
+      <span id="memberCount">184,520</span> Subs
+    </div>
+  </header>
+
+  <!-- Main Conversion Container -->
+  <main class="w-full max-w-md flex flex-col items-center text-center">
+
+    <!-- Profile DP Card with Crown & Rotating Border -->
+    <div class="relative mb-5 group">
+      <!-- Rotating Conic Border -->
+      <div class="absolute -inset-1 rounded-full bg-gradient-to-tr from-amber-400 via-cyan-400 to-emerald-400 opacity-90 blur-[2px] animate-spin" style="animation-duration: 8s;"></div>
+
+      <!-- Crown Badge -->
+      <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-20 bg-gradient-to-r from-amber-300 to-amber-500 text-slate-950 px-2.5 py-0.5 rounded-full text-[11px] font-black uppercase tracking-wider flex items-center gap-1 shadow-lg shadow-amber-500/50">
+        <i class="fa-solid fa-crown text-xs text-amber-950"></i> KING
+      </div>
+
+      <!-- Avatar Container -->
+      <div class="relative w-28 h-28 rounded-full bg-slate-900 border-2 border-amber-400/80 flex flex-col items-center justify-center overflow-hidden z-10 shadow-2xl">
+        <!-- Coin Icon Graphic -->
+        <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-300 to-amber-600 flex items-center justify-center mb-1 shadow-inner shadow-black/40">
+          <i class="fa-solid fa-coins text-slate-950 text-xl"></i>
+        </div>
+        <span class="font-sport font-extrabold text-sm tracking-wider text-white">TOSS KING</span>
+      </div>
+
+      <!-- Verified Badge Icon -->
+      <div class="absolute bottom-0 right-0 z-20 bg-cyan-500 text-white w-7 h-7 rounded-full flex items-center justify-center border-2 border-slate-950 shadow-md">
+        <i class="fa-solid fa-check text-xs font-bold"></i>
+      </div>
+    </div>
+
+    <!-- Title & Brand Information -->
+    <h1 class="text-3xl font-extrabold font-sport tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-300 via-white to-cyan-300 flex items-center justify-center gap-2">
+      TOSS KING AJAY
+      <i class="fa-solid fa-circle-check text-cyan-400 text-xl"></i>
+    </h1>
+    <p class="text-xs uppercase tracking-widest text-amber-400 font-bold mt-1">
+      ★ India's #1 Cricket Toss & Match Analyst ★
+    </p>
+
+    <!-- Social Proof Badges Grid -->
+    <div class="grid grid-cols-3 gap-2 w-full my-5">
+      <div class="glass-card p-2.5 rounded-xl border border-white/5">
+        <div class="font-sport text-lg font-bold text-amber-400">98.4%</div>
+        <div class="text-[10px] text-slate-400 font-medium leading-tight">Accuracy Rate</div>
+      </div>
+      <div class="glass-card p-2.5 rounded-xl border border-white/5">
+        <div class="font-sport text-lg font-bold text-cyan-400">100%</div>
+        <div class="text-[10px] text-slate-400 font-medium leading-tight">Free Reports</div>
+      </div>
+      <div class="glass-card p-2.5 rounded-xl border border-white/5">
+        <div class="font-sport text-lg font-bold text-emerald-400">5+ Yrs</div>
+        <div class="text-[10px] text-slate-400 font-medium leading-tight">Experience</div>
+      </div>
+    </div>
+
+    <!-- 15-Second Circular Dynamic Timer -->
+    <div class="glass-card p-4 rounded-2xl w-full border border-amber-500/20 mb-5 relative overflow-hidden">
+      <div class="flex items-center justify-center gap-4">
+        <!-- Circular Progress Ring -->
+        <div class="relative w-16 h-16 flex items-center justify-center">
+          <svg class="w-full h-full transform -rotate-90 countdown-svg" viewBox="0 0 36 36">
+            <path
+              class="text-slate-800"
+              stroke-width="3"
+              stroke="currentColor"
+              fill="none"
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <path
+              id="countdownCircle"
+              class="text-amber-400 stroke-current"
+              stroke-width="3.2"
+              stroke-dasharray="100, 100"
+              stroke-linecap="round"
+              fill="none"
+              d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+          </svg>
+          <div class="absolute inset-0 flex flex-col items-center justify-center">
+            <span id="countdownNumber" class="text-lg font-extrabold font-sport text-white">15</span>
+            <span class="text-[8px] uppercase tracking-tighter text-slate-400 -mt-1">sec</span>
+          </div>
+        </div>
+
+        <div class="text-left">
+          <h2 class="text-sm font-bold text-white uppercase tracking-wide">Auto-Redirecting...</h2>
+          <p class="text-xs text-slate-300">Opening official Telegram channel in <span id="textCountdown" class="text-amber-400 font-bold">15</span> seconds</p>
+          <p class="text-[10px] text-emerald-400 font-medium mt-0.5"><i class="fa-solid fa-lock-open text-[9px] mr-1"></i>Free Entry Pass Activated</p>
+        </div>
+      </div>
+
+      <!-- Linear progress track -->
+      <div class="w-full bg-slate-800/80 rounded-full h-1.5 mt-3 overflow-hidden">
+        <div id="linearProgressBar" class="bg-gradient-to-r from-amber-400 to-cyan-400 h-1.5 rounded-full transition-all duration-1000 w-full"></div>
+      </div>
+    </div>
+
+    <!-- High-Converting Pulsing Telegram CTA Button -->
+    <a href="https://t.me/+hMpyVR8-2ZM5N2Jl" class="pulse-btn relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-cyan-500 via-blue-600 to-cyan-500 text-white font-sport font-black text-xl py-4 px-6 tracking-wider uppercase shadow-xl glow-cyan flex items-center justify-center gap-3 transition-transform active:scale-95 group">
+      <div class="animate-shimmer"></div>
+      <i class="fa-brands fa-telegram text-3xl group-hover:rotate-12 transition-transform"></i>
+      <span>JOIN TOSS KING AJAY NOW</span>
+    </a>
+
+    <!-- Secondary Direct CTA Link -->
+    <a href="https://t.me/+hMpyVR8-2ZM5N2Jl" class="mt-3.5 text-xs font-semibold text-slate-300 hover:text-amber-400 flex items-center gap-1.5 transition-colors">
+      <span>Not redirected automatically? Click here to join</span>
+      <i class="fa-solid fa-arrow-right text-[10px]"></i>
+    </a>
+
+    <!-- Features / Bullet Highlights -->
+    <div class="glass-card w-full rounded-2xl p-4 mt-5 text-left border border-white/5 space-y-2.5">
+      <div class="flex items-start gap-2.5">
+        <div class="bg-amber-500/20 text-amber-400 rounded-lg p-1.5 mt-0.5 text-xs">
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold text-slate-200">Instant Match & Toss Update</h3>
+          <p class="text-[11px] text-slate-400">Get Toss prediction 30-45 mins before official match start.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-2.5">
+        <div class="bg-emerald-500/20 text-emerald-400 rounded-lg p-1.5 mt-0.5 text-xs">
+          <i class="fa-solid fa-shield-halved"></i>
+        </div>
+        <div>
+          <h3 class="text-xs font-bold text-slate-200">100% Genuine & Trusted</h3>
+          <p class="text-[11px] text-slate-400">Regular jackpot match sessions with pure statistical research.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Sticky Bottom Mobile Join Bar -->
+  <div class="sticky bottom-2 w-full max-w-md pt-3 z-30">
+    <div class="glass-card border border-cyan-500/30 rounded-2xl p-2.5 flex items-center justify-between shadow-2xl backdrop-blur-md">
+      <div class="flex items-center gap-2 pl-2">
+        <div class="w-8 h-8 rounded-full bg-amber-500/20 flex items-center justify-center text-amber-400">
+          <i class="fa-solid fa-crown text-xs"></i>
+        </div>
+        <div class="text-left">
+          <p class="text-[11px] font-bold text-white leading-tight">TOSS KING AJAY</p>
+          <p class="text-[9px] text-slate-400">Free Session Open</p>
+        </div>
+      </div>
+      <a href="https://t.me/+hMpyVR8-2ZM5N2Jl" class="bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 text-xs font-black uppercase tracking-wider py-2.5 px-4 rounded-xl shadow-md glow-green transition active:scale-95 flex items-center gap-1.5">
+        <span>JOIN FREE</span>
+        <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Countdown & Auto-Redirect Logic -->
+  <script>
+    const targetTelegramUrl = "https://t.me/+hMpyVR8-2ZM5N2Jl";
+    const totalSeconds = 15;
+    let remainingSeconds = totalSeconds;
+
+    const countNumEl = document.getElementById("countdownNumber");
+    const countTextEl = document.getElementById("textCountdown");
+    const circleEl = document.getElementById("countdownCircle");
+    const linearProgressEl = document.getElementById("linearProgressBar");
+
+    const timerInterval = setInterval(() => {
+      remainingSeconds--;
+
+      if (remainingSeconds >= 0) {
+        // Text & number updates
+        countNumEl.textContent = remainingSeconds;
+        countTextEl.textContent = remainingSeconds;
+
+        // Circular stroke offset calculation (stroke-dasharray="100, 100")
+        const progressPercentage = (remainingSeconds / totalSeconds) * 100;
+        circleEl.setAttribute("stroke-dasharray", `${progressPercentage}, 100`);
+
+        // Linear bar update
+        linearProgressEl.style.width = `${progressPercentage}%`;
+      }
+
+      if (remainingSeconds <= 0) {
+        clearInterval(timerInterval);
+        // Execute automatic Telegram redirect
+        window.location.href = targetTelegramUrl;
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
